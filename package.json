@@ -1,0 +1,24 @@
+{
+  "name": "desafioWarren",
+  "version": "1.0.0",
+  "description": "Repositório criado para manter o código utilizado no",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "cy:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natanlbispo/desafioWarren.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natanlbispo/desafioWarren/issues"
+  },
+  "homepage": "https://github.com/natanlbispo/desafioWarren#readme",
+  "devDependencies": {
+    "cypress": "^5.0.0"
+  }
+}
