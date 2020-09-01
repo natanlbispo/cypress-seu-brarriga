@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "test:chrome": "cypress run --browser chrome --no-exit"
   },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/support/steps"
+  },  
   "repository": {
     "type": "git",
     "url": "git+https://github.com/natanlbispo/desafioWarren.git"
@@ -19,6 +23,7 @@
   },
   "homepage": "https://github.com/natanlbispo/desafioWarren#readme",
   "devDependencies": {
-    "cypress": "^5.0.0"
+    "cypress": "^5.0.0",
+    "cypress-cucumber-preprocessor": "^2.5.5"
   }
 }
