@@ -1,6 +1,8 @@
 {
     "notfound": "Problemas com o login do usuário",
     "email": "Email é um campo obrigatório",
-    "pass": "Senha é um campo obrigatório"
+    "name": "Nome é um campo obrigatório",
+    "pass": "Senha é um campo obrigatório",
+    "confirm": "Usuário inserido com sucesso"
 
 }

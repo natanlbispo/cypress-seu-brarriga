@@ -27,7 +27,7 @@ Feature: Login site Seu Barriga
         And clico no botão entrar
         Then devo vizualizar um aviso com uma mensagem do erro do campo senha
 
-    Scenario: Tentar fazer com campos em branco"
+    Scenario: Tentar fazer login com campos em branco
         Given acesso o site Seu Barriga
         When acesso a pagina de login
         And não preencho os campos necessario para fazer o login
