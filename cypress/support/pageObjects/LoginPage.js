@@ -20,21 +20,34 @@ class LoginPage {
         cy.get(loginElements.botaoEntrar()).should('contain', 'Entrar');
     }
 
+    preencherSenha(campo){
+        cy.get(loginElements.passLogin()).type("1234");
+    }
+    preencherEmail(campo){
+        cy.get(loginElements.emailLogin()).type("natan.bispo@teste.io");
+    }
+
     //Preebcher os campos nescessário para fazer login
     preencherCamposLogin(){
         cy.fixture('user1').then(body => {
-            cy.get(loginElements.emailLogin()).type(body.email);
-            cy.get(loginElements.passLogin()).type(body.pass);
-        })
+            this.preencherEmail(body.email);
+            this.preencherSenha(body.pass);
+        });
     }
 
     clicarBotaoEntrar() {
         cy.get(loginElements.botaoEntrar()).click();
     }
 
-    verificarAlerta(){
-        cy.get((loginElements.alert())).should('be.visible');
+    verificarAlerta(message){
+        cy.fixture('alerts').then(body => {
+            cy.get((loginElements.alert()))
+            .should('be.visible')
+            .contains(body[message]);
+        });
     }
+
+    
 }
 
 export default LoginPage;

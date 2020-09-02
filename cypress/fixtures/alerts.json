@@ -1,0 +1,6 @@
+{
+    "notfound": "Problemas com o login do usuário",
+    "email": "Email é um campo obrigatório",
+    "pass": "Senha é um campo obrigatório"
+
+}
