@@ -6,10 +6,6 @@ const cadastroElements = new CadastroElements();
 const url = Cypress.config("baseUrl");
 
 class CadastroPage {
-  // Acessa o site
-  acessarSite() {
-    cy.visit(url);
-  }
 
   // Ir para página de login
   clicarBotaoPaginaCadastro() {
@@ -20,54 +16,28 @@ class CadastroPage {
     cy.get(cadastroElements.botaoCadastrar()).should("contain", "Cadastrar");
   }
 
-  preencherCampoNome() {
-    cy.get(cadastroElements.nameCadastro()).type(faker.name.findName());
+  preencherCampoNome(name) {
+    cy.get(cadastroElements.nameCadastro()).type(name);
   }
 
-  preencherCampoEmail() {
-    cy.get(cadastroElements.emailCadastro()).type(faker.internet.exampleEmail());
+  preencherCampoEmail(email) {
+    cy.get(cadastroElements.emailCadastro()).type(email);
   }
 
-  preencherCampoSenha() {
-    cy.get(cadastroElements.passCadastro()).type(faker.internet.password());
+  preencherCampoSenha(senha) {
+    cy.get(cadastroElements.passCadastro()).type(senha);
   }
 
-  preencherCamposCadastro() {
-    this.preencherCampoNome();
-    this.preencherCampoEmail();
-    this.preencherCampoSenha();
+  preencherCamposCadastro(name= faker.name.findName(), email=faker.internet.exampleEmail(),senha=faker.internet.password()) {
+
+    this.preencherCampoNome(name);
+    this.preencherCampoEmail(email);
+    this.preencherCampoSenha(senha);
   }
 
   clicarBotaoCadastrar() {
         cy.get(cadastroElements.botaoCadastrar()).click();
     }
-
-  // preencherSenha(campo){
-  //     cy.get(loginElements.passLogin()).type("1234");
-  // }
-  // preencherEmail(campo){
-  //     cy.get(loginElements.emailLogin()).type("natan.bispo@teste.io");
-  // }
-
-  // //Preebcher os campos nescessário para fazer login
-  // preencherCamposLogin(){
-  //     cy.fixture('user1').then(body => {
-  //         this.preencherEmail(body.email);
-  //         this.preencherSenha(body.pass);
-  //     });
-  // }
-
-  // clicarBotaoEntrar() {
-  //     cy.get(loginElements.botaoEntrar()).click();
-  // }
-
-  // verificarAlerta(message){
-  //     cy.fixture('alerts').then(body => {
-  //         cy.get((loginElements.alert()))
-  //         .should('be.visible')
-  //         .contains(body[message]);
-  //     });
-  // }
 }
 
 export default CadastroPage;

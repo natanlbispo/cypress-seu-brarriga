@@ -7,7 +7,7 @@ const cadastroPage = new CadastroPage;
 
 
 Given("acesso o site Seu Barriga", () => {
-    cadastroPage.acessarSite();
+    loginPage.acessarSite();
 });
 
 When("acesso a pagina de cadastro", () => {

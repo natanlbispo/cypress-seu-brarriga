@@ -3,6 +3,7 @@
     "email": "Email é um campo obrigatório",
     "name": "Nome é um campo obrigatório",
     "pass": "Senha é um campo obrigatório",
-    "confirm": "Usuário inserido com sucesso"
+    "confirm": "Usuário inserido com sucesso",
+    "conta": "Conta adicionada com sucesso!"
 
 }
