@@ -13,7 +13,7 @@ email=faker.internet.exampleEmail(),
 senha=faker.internet.password(),
 conta ='Conta 1';
 
-Given("acesso o site Seu Barriga", () => {
+Given("que acesso o site Seu Barriga", () => {
     loginPage.acessarSite();
 });
 
@@ -45,9 +45,16 @@ And("clico para entrar no sistema", () => {
 
 And("adiciono uma conta", () => {
     usuarioPage.adicionarConta(conta);
-    loginPage.verificarAlerta("conta");
-
+    
 });
 Then("devo visualizar uma mensagem de bem vindo", () => {
     usuarioPage.mesgBem(name);
 });
+
+Then("devo visualizar uma mensagem informando que a conta foi adicionada", () => {
+    loginPage.verificarAlerta("conta");
+});
+
+
+
+Then 

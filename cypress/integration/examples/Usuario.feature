@@ -2,7 +2,7 @@ Feature: Efetuar um cadastro site Seu Barriga
     Como usuário devo conseguir fazer um cadastro na aplicação, execultar o login e interagir com o sistema
 
     Scenario: Realizar cadastro e login na aplicação
-        Given acesso o site Seu Barriga
+        Given que acesso o site Seu Barriga
         And realizo o cadastro da minha conta
         When acesso a pagina de login
         And preencho os campos do login com os dados cadastrados
@@ -10,8 +10,8 @@ Feature: Efetuar um cadastro site Seu Barriga
         Then devo visualizar uma mensagem de bem vindo
 
     Scenario: Adicionar uma Conta
-        Given acesso o site Seu Barriga
+        Given que acesso o site Seu Barriga
         And realizo login na plataforma
         When acesso o menu Contas
         And adiciono uma conta
-        # Then a conta adicionada aparece na listagem de contas
+        Then devo visualizar uma mensagem informando que a conta foi adicionada

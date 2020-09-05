@@ -6,7 +6,7 @@ const loginPage = new LoginPage
 const cadastroPage = new CadastroPage;
 
 
-Given("acesso o site Seu Barriga", () => {
+Given("que acesso o site Seu Barriga", () => {
     loginPage.acessarSite();
 });
 

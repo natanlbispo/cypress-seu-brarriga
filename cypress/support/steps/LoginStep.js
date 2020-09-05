@@ -3,7 +3,7 @@
 import LoginPage from '../pageobjects/LoginPage'
 const loginPage = new LoginPage
 
-Given("acesso o site Seu Barriga", () => {
+Given("que acesso o site Seu Barriga", () => {
     loginPage.acessarSite();
 });
 
@@ -23,11 +23,11 @@ And("clico no botão entrar", () => {
 });
 
 And("preencho somente o campo de senha", () => {
-    loginPage.preencherSenha();
+    loginPage.preencherSenha(123);
 });
 
 And("preencho somente o campo de email", () => {
-    loginPage.preencherEmail();
+    loginPage.preencherEmail("natan.bispo@teste.com");
 });
 
 And("a mensagem deve informar o campo que está faltando ser preenchido", () => {
