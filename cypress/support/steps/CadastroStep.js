@@ -15,11 +15,11 @@ When("acesso a pagina de cadastro", () => {
 });
 
 
-And("preencho os campos necessario para fazer o cadastro", () => {
+And("preencho os campos necessarios para fazer o cadastro", () => {
     cadastroPage.preencherCamposCadastro();
 });
 
-And("não preencho os campos necessario para fazer o cadastro", () => {});
+And("não preencho os campos necessario para fazer o casdastro", () => {});
 
 And("clico no botão Cadastrar", () => {
     cadastroPage.clicarBotaoCadastrar();

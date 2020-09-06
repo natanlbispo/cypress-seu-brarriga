@@ -1,7 +1,7 @@
-Feature: Efetuar um cadastro site Seu Barriga
+Feature: Realizar fluxos do usuário
     Como usuário devo conseguir fazer um cadastro na aplicação, execultar o login e interagir com o sistema
 
-    Scenario: Realizar cadastro e login na aplicação
+    Scenario: Realizar login na aplicação
         Given que acesso o site Seu Barriga
         And realizo o cadastro da minha conta
         When acesso a pagina de login

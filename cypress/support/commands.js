@@ -23,3 +23,21 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+
+Cypress.Commands.add("makeRequest", (baseUrl, methods, route, body, code) =>{
+    cy.request(
+        {
+            method: methods,
+            url: baseUrl+route,
+            failOnStatusCode: false,
+            body: body
+        }).then(response => {
+            expect(response.status).to.eq(code)
+            if(code ===400){
+                console.log(response);
+                expect(response.body.error).to.be.eq("Problemas com o login do usuário");
+            }
+        
+        });
+});

@@ -9,14 +9,14 @@ Feature: Efetuar um cadastro site Seu Barriga
     Scenario: Cadastrar usuário na plataforma
         Given que acesso o site Seu Barriga
         When acesso a pagina de cadastro
-        And preencho os campos necessario para fazer o cadastro
+        And preencho os campos necessarios para fazer o cadastro
         And clico no botão Cadastrar
         Then devo ser direcinado para tela de login
         And vizualizo uma mensagem de confimração
 
-    Scenario: Tentar Cadastro com campos em branco
+    Scenario: Realizar Cadastro com campos em branco
         Given que acesso o site Seu Barriga
         When acesso a pagina de cadastro
-        And não preencho os campos necessario para fazer o login
+        And não preencho os campos necessario para fazer o casdastro
         And clico no botão Cadastrar
         Then devo vizualizar avisos com mensagens dos erros dos campos nome, senha, email
