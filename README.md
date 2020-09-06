@@ -1,4 +1,4 @@
-# Seu Barriga Desáfio
+# Seu Barriga Desafio
 
 Este repositório manten o código utlizado na automação do desafio.
 
