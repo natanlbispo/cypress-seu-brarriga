@@ -12,7 +12,7 @@ API : https://barrigarest.wcaquino.me
 * NodeJS
 ## Clonando o projeto
 
-$ git clone
+$ git clone https://github.com/natanlbispo/cypress-seu-brarriga
 
 
 ## Rodar o projeto
