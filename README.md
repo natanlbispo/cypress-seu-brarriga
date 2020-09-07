@@ -2,10 +2,10 @@
 
 Este repositório mantém o código utlizado na automação do desafio.
 
-e2e : https://seubarriga.wcaquino.me/
+End-to-end: https://seubarriga.wcaquino.me/
 * Utlizando Cucumber.js - Assim foi possível adicionar o padrão BDD no projeto.
 
-API : https://barrigarest.wcaquino.me
+API: https://barrigarest.wcaquino.me
 
 ## Pré-requisito
 * Git
