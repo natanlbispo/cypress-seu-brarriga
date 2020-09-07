@@ -1,6 +1,6 @@
 # Seu Barriga Desafio
 
-Este repositório manten o código utlizado na automação do desafio.
+Este repositório mantém o código utlizado na automação do desafio.
 
 e2e : https://seubarriga.wcaquino.me/
 * Utlizando Cucumber.js - Assim foi possível adicionar o padrão BDD no projeto.
