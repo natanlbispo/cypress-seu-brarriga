@@ -10,7 +10,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "step_definitions": "cypress/support/steps"
-  },  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/natanlbispo/desafioWarren.git"
@@ -25,5 +25,8 @@
   "devDependencies": {
     "cypress": "^5.0.0",
     "cypress-cucumber-preprocessor": "^2.5.5"
+  },
+  "dependencies": {
+    "faker-br": "^0.2.7"
   }
 }
